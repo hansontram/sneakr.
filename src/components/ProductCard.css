@@ -1,0 +1,32 @@
+.card-container{
+    width: 20%;
+    max-height: 280px;
+    /* temporary margin */
+    margin-bottom: 5px;  
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+/* TODO: fix the margin or padding and match to white, figure out how to make responsive  */
+
+.productImg{
+    width: 100%;
+    background-color: white;
+    
+    /* border: solid 1px red; */
+}
+.product-title {
+    height: 100%;
+    padding: 10px 10px 10px 10px;
+    /* border: solid 1px red; */
+    margin-top: 20px;
+    background-color: white;
+}
+.product-title span{
+    background-color: white;
+}
+.product-title h4{
+    margin-top: 10px;
+    background-color: white;
+}

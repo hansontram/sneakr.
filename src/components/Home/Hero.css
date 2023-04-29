@@ -6,11 +6,11 @@
     /* background-image: url('../../assets/Home/ts-wmns.jpeg') */
 
 }
-img{
+.hero-img{
     width: 100%;
     /* height: 100%; */
     /* width: 750px;*/
-    height: 800px; 
+    height: 600px; 
     object-fit: cover;
 }
 

@@ -1,0 +1,24 @@
+
+.product-section-container{
+border: 1px solid red;
+height: 800px;
+width: 100%;
+margin-top: 50px;
+
+}
+.category-container{
+    border: 1px solid rgb(0, 255, 42);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+    
+
+
+}
+.card{
+    width: 25%;
+    box-sizing: border-box;
+} 
+
