@@ -11,6 +11,9 @@
     /* height: 100%; */
     /* width: 750px;*/
     height: 600px; 
+    /* transform: scale(1.5); */
     object-fit: cover;
 }
 
+/* Refer to old projects for hero example,
+look up how to make hero components  */
