@@ -1,12 +1,18 @@
 .card-container{
-    width: 20%;
+    width: 22%;
+    /* min-height: 280px; */
     max-height: 280px;
     /* temporary margin */
-    margin-bottom: 5px;  
-    /* border: solid 1px red; */
+    /* margin-bottom: 5px;   */
+    border: solid 1px blue;
     display: flex;
     flex-direction: column;
     background-color: white;
+    /* margin: 15px 15px; */
+    
+    margin: 10px auto;
+
+  
 }
 /* TODO: fix the margin or padding and match to white, figure out how to make responsive  */
 

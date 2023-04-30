@@ -1,0 +1,23 @@
+.category-section-container {
+  border: 1px solid red;
+  /* height: 800px; */
+  width: 100%;
+  margin-top: 50px;
+}
+.category-card-container {
+  border: 1px solid rgb(0, 255, 42);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* margin: auto; */
+}
+.category-section-container h3 {
+  margin: 10px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}

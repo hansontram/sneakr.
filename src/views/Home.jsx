@@ -1,13 +1,15 @@
 import Navbar from '../components/Navbar'
 import Hero from '../components/Home/Hero'
-import ProductSection from '../components/Home/ProductSection'
+import ProductCategory from '../components/Home/ProductCategory'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
     <div>
       <Navbar/>
       <Hero/>
-      <ProductSection/>
+      <ProductCategory/>
+      <Footer/>
     </div>
   )
 }
