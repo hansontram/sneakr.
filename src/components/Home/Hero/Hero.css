@@ -11,7 +11,7 @@
 }
 .hero-img{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     /* width: 750px;*/
     
     /* transform: scale(1.5); */
@@ -19,10 +19,10 @@
 }
 .hero-text{
     position: absolute;
-    top: 70%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 80%;
     
     
 }
@@ -38,3 +38,6 @@ TODO: Have to figure out dimensions for heroImg, make words responsive
 
 /* Refer to old projects for hero example,
 look up how to make hero components  */
+
+/* @media screen and (max-width: 600px) {
+} */

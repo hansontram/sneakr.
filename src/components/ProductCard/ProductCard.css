@@ -1,21 +1,16 @@
 .card-container{
     width: 22%;
-    /* min-height: 280px; */
-    max-height: 280px;
-    /* temporary margin */
-    /* margin-bottom: 5px;   */
+    max-height: 100%;
     border: solid 1px blue;
     display: flex;
     flex-direction: column;
     background-color: white;
-    /* margin: 15px 15px; */
     
-    margin: 10px auto;
+    /* margin: 5px auto; */
+    margin: 10px 10px;
 
   
 }
-/* TODO: fix the margin or padding to get rid of the grey line
-, figure out how to make responsive  */
 
 .productImg{
     width: 100%;
@@ -36,4 +31,23 @@
 .product-title h4{
     margin-top: 10px;
     background-color: white;
+}
+
+@media screen and (max-width: 990px) {
+    .card-container{
+        width: 27%;
+      
+    }
+}
+@media screen and (max-width: 760px) {
+    .card-container{
+        width: 40%;
+      
+    }
+}
+@media screen and (max-width: 360px) {
+    .card-container{
+        width: 80%;
+      
+    }
 }

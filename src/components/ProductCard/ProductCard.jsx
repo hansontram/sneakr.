@@ -1,5 +1,5 @@
 import "./ProductCard.css";
-import productImg from "../assets/productImg.jpeg";
+import productImg from "../../assets/productImg.jpeg"
 
 const ProductCard = () => {
   return (
