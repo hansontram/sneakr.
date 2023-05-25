@@ -1,22 +1,20 @@
 import "./ProductCategory.css";
 import ProductCard from "../../ProductCard/ProductCard";
 
-const ProductCategory = () => {
+const ProductCategory = ({ data, title, setData}) => {
+
+  // const shoes = data.map(()=>)
   return (
     <section className="category-section-container">
-      <h3>NEW RELEASES</h3>
+      <h3>{title.toUpperCase()}</h3>
       <div className="category-card-container">
-        <ProductCard className="card" />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        {/* <ProductCard className="card"/> */}
+        {...data.slice(0,8).map((sneaker, index) => (
+          <ProductCard key={index} name={sneaker.name} image={sneaker.image} brand={sneaker.brand}/>
+        ))}
       </div>
       <div className="btn-container">
-        <button>Shop New Releases</button>
+        <button onClick={ ()=>setData([]) }>Shop {title}</button>
       </div>
     </section>
   );

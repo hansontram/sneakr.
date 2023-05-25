@@ -1,0 +1,103 @@
+[
+
+        {
+          "id": 1,
+          "brand": "Nike",
+          "name": "Jarritos x Dunk Low SB",
+          "description": "A collaboration between Jarritos x Nike Dunk Low SB takes inspiration from the famous Mexican soda brand. The upper of the sneaker combines a Malachite green textile Swoosh against the upper of Phantom white leather with hemp canvas overlays. The lateral heel is embellished with the Jarritos logo stitched in green and orange, and the woven tongue tag has dual branding. Alternating heel tabs read 'Nike' and 'Jarritos.' The sneaker rides a sturdy rubber cupsole with white sidewalls atop a green and orange outsole.",
+          "price": 462,
+          "isNewRelease": true,
+          "isBestSeller": true,
+          "image":"https://cdn.flightclub.com/1250/TEMPLATE/346203/1.jpg"
+        },
+        {
+          "id": 2,
+          "brand": "Nike",
+          "name": "Dunk Low 'Panda'",
+          "description": "The Dunk Low 'Black White' also known as 'Panda' brings a classic two-tone look to its classic basketball construction. The shoe's low-top build emerges in leather, with a white base contrasted by black overlays, with further black on the Swoosh branding. Perforations on the toe box provide breathability, while underfoot, the two-tone look is matched by the tooling, which incorporates a concentric rubber outsole for traction.",
+          "price": 150,
+          "isNewRelease": true,
+          "isBestSeller": true,
+          "image":"https://cdn.flightclub.com/1250/TEMPLATE/253215/1.jpg"
+        },
+        {
+          "id": 3,
+          "brand": "Nike",
+          "name": "Air Force 1 '07' 'Triple White'",
+          "description": "The radiance lives on in the Nike Air Force 1 ’07, the b-ball OG that puts a fresh spin on what you know best: durably stitched overlays, clean finishes and the perfect amount of flash to make you shine.",
+          "price": 90,
+          "isNewRelease": true,
+          "isBestSeller": true,
+          "image":"https://cdn.flightclub.com/1250/TEMPLATE/346203/1.jpg"
+        },
+        {
+          "id": 4,
+          "brand": "Nike",
+          "name": "Dunk Low Premium 'Valentine's Day",
+          "description": "Celebrate the most romantic day on the calendar with the Nike Dunk Low Premium ‘Valentine’s Day.’ The iconic basketball shoe gets a fresh update with a color combo that pays homage to February 14th. The premium all-leather upper boasts a rich burgundy base and off-white overlays, complemented by delicate pink accents on the Swoosh, tongue tag and heel tab. Comfort and durability are supplied with soft cushioning of the sturdy rubber cupsole, finished with vintage off-white sidewalls and the outsole in bold maroon.",
+          "price": 150,
+          "isNewRelease": true,
+          "isBestSeller": true,
+          "image":"https://cdn.flightclub.com/500/TEMPLATE/338838/1.jpg"
+        },
+        {
+          "id": 5,
+          "brand": "Nike",
+          "name": "Dunk Low 'Mica Green",
+          "description": "The Nike Dunk Low 'Mica Green' sneaker is a modern take on the classic basketball shoe, featuring updated materials and a subtle color scheme. The upper’s white canvas base pairs with leather overlays in pale green accented by a white tumbled leather Swoosh. The breathable nylon tongue is adorned with a woven Nike tag, and comfort is provided by the padded low-cut collar. The shoe's vintage-inspired design is enhanced by the durable rubber cupsole with its off-white finish.",
+          "price": 130,
+          "isNewRelease": true,
+          "isBestSeller": true,
+          "image":"https://cdn.flightclub.com/500/TEMPLATE/361344/2.jpg"
+        }, 
+        {
+            "id": 6,
+            "brand": "Air Jordan",
+            "name": "Fragment Design X Travis Scott X Air Jordan 1 Retro Low",
+            "description": "The Fragment Design x Travis Scott x Air Jordan 1 Retro Low released as part of a collaboration with the Houston rapper and Japanese imprint. Featuring a colorway that recalls previous fragment design collaborations, the shoe's upper is built with a white leather base, overlaid by black and royal blue and complemented by inverted Swoosh branding on the lateral side. The heel patch of the left shoe includes Cactus Jack branding and a smiley face logo, while fragment's lightning bolt marks the right shoe. Underfoot, a two-tone rubber cupsole anchors the design.",
+            "price": 1300,
+            "isNewRelease": true,
+            "isBestSeller": true,
+            "image":"https://cdn.flightclub.com/1250/TEMPLATE/267414/1.jpg"
+          },
+        {
+            "id": 7,
+            "brand": "Air Jordan",
+            "name": "TRAVIS SCOTT X AIR JORDAN 4 RETRO 'CACTUS JACK'",
+            "description": "The Travis Scott x Air Jordan 4 Retro 'Cactus Jack' honors the rapper’s hometown of Houston. Its palette borrows from the team colors of the city’s former Oilers football team, and features a Durabuck leather upper in University Blue, while its insole and branding are dressed in Varsity Red. Completing the look are a black lace cage and speckled light blue heel panel.",
+            "price": 1050,
+            "isNewRelease": true,
+            "isBestSeller": true,
+            "image":"https://cdn.flightclub.com/500/TEMPLATE/803976/1.jpg"
+          },
+        {
+            "id": 8,
+            "brand": "Air Jordan",
+            "name": "TRAVIS SCOTT X AIR JORDAN 1 RETRO HIGH OG 'MOCHA'",
+            "description": "A collaboration between Travis Scott and Jordan brand, the Travis Scott x Air Jordan 1 Retro High OG 'Mocha' features an oversized backward Swoosh on the lateral side. The tumbled white leather and Dark Mocha suede construction is accented by University Red Cactus Jack and Nike branding on the tongue, while the heel sports Scott's face logo in a debossed fashion.",
+            "price": 1650,
+            "isNewRelease": true,
+            "isBestSeller": true,
+            "image":"https://cdn.flightclub.com/1250/TEMPLATE/806920/1.jpg"
+          },
+        {
+            "id": 9,
+            "brand": "Air Jordan",
+            "name": "A MA MANIÉRE X AIR JORDAN 4 RETRO 'VIOLET ORE'",
+            "description": "Following the AJ 1, 2 and 3 collaborations, Atlanta-based retailer A Ma Maniére returns with their take on the AJ4. The A Ma Maniére x Air Jordan 4 Retro 'Violet Ore' showcases premium materials and understated colors on the classic silhouette. A nubuck upper in a purple hue is accented with tonal quarter panel netting and a chrome rivet on the lateral collar area. Flight tags on the tongue show mismatched Jumpman and A Ma Maniére branding, while the classic 'Nike Air' can be found on the back heel. The back heel tab features the phrase 'It's not about the shoes...it's about where you're going' hidden on the inside, while a quilted textile lines the inside of the shoe and the insole.",
+            "price": 450,
+            "isNewRelease": true,
+            "isBestSeller": true,
+            "image":"https://cdn.flightclub.com/1250/TEMPLATE/325893/1.jpg"
+          },
+        {
+            "id": 10,
+            "brand": "Air Jordan",
+            "name": "AIR JORDAN 11 RETRO 'BRED' 2019",
+            "description": "Bringing back an OG colorway, the Air Jordan 11 Retro 'Bred' 2019 features a familiar Chicago Bulls look. The shoe's upper is built with a mix of mesh and patent leather, all finished in black, save for the Varsity Red Jumpman and white '23.' Underfoot, a contrasting white midsole houses Air and a midfoot plate, while a Varsity Red rubber outsole provides traction and completes the look.",
+            "price": 500,
+            "isNewRelease": true,
+            "isBestSeller": true,
+            "image":"https://cdn.flightclub.com/1250/TEMPLATE/152814/1.jpg"
+          }
+      ]

@@ -1,15 +1,15 @@
 import "./ProductCard.css";
 import productImg from "../../assets/productImg.jpeg"
 
-const ProductCard = () => {
+const ProductCard = ({name,image, brand}) => {
   return (
     <div className="card-container">
       <div>
-        <img className="productImg" src={productImg} alt="" />
+        <img className="productImg" src={image} alt="" />
       </div>
       <div className="product-title">
-        <span>Air Jordan</span>
-        <h4>TRAVIS SCOTT X WMNS AIR JORDAN RETRO LOW OG 'OLIVE'</h4>
+        <span>{brand}</span>
+        <h4>{name}</h4>
       </div>
     </div>
   );
