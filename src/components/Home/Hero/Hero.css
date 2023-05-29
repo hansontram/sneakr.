@@ -1,0 +1,43 @@
+
+
+.hero-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* height: 600px; */
+    /* border: 1px solid red; */
+    /* background-image: url('../../assets/Home/ts-wmns.jpeg') */
+
+}
+.hero-img{
+    width: 100%;
+    height: 100vh;
+    /* width: 750px;*/
+    
+    /* transform: scale(1.5); */
+    object-fit: cover;
+}
+.hero-text{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    
+    
+}
+.hero-text h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+TODO: Have to figure out dimensions for heroImg, make words responsive
+
+/* Refer to old projects for hero example,
+look up how to make hero components  */
+
+/* @media screen and (max-width: 600px) {
+} */
