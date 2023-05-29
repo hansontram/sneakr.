@@ -1,9 +1,17 @@
-import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
+import AllProducts from '../components/ShopAll/AllProducts'
 
-const Shop = () => {
+const Shop = ({data}) => {
+
   return (
     <div>
-      <p>This is shop page</p>
+      <Navbar/>
+        {/* Iterates and sorts alphabetically */}
+        <AllProducts data={data
+          .map(shoe => shoe)
+          .sort((a, b) => a.name.localeCompare(b.name))} 
+        title="Shop All" />
+
     </div>
   )
 }

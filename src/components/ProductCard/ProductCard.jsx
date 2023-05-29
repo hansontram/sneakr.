@@ -1,7 +1,7 @@
 import "./ProductCard.css";
 import productImg from "../../assets/productImg.jpeg"
 
-const ProductCard = ({name,image, brand}) => {
+const ProductCard = ({name,image, brand, price}) => {
   return (
     <div className="card-container">
       <div>
@@ -10,6 +10,7 @@ const ProductCard = ({name,image, brand}) => {
       <div className="product-title">
         <span>{brand}</span>
         <h4>{name}</h4>
+        <p>${price}</p>
       </div>
     </div>
   );
