@@ -3,48 +3,91 @@ import "./AllProducts.css";
 import ProductCard from "../ProductCard/ProductCard";
 
 const AllProducts = ({ data, title }) => {
-  const [products, setProducts] = useState([]);
-  const [sortBy, setSortBy] = useState("");
+  const [sortBy, setSortBy] = useState("relevant");
   const [filterBy, setFilterBy] = useState("");
-
   const [filteredProducts, setFilteredProducts] = useState([]);
+  // const [products, setProducts] = useState([])
 
-  // console.log("this is filtered", filteredProducts)
-  // console.log("this is data", data)
-  
-  // useEffect(() => {
-  //   setProducts(data);
-  // }, [data]);
+const sortProducts = (sortBy) => {
+  // conditional logic 
+}
+const filterProducts = (filterBy) => {
+  // conditional logic 
+}
 
   useEffect(() => {
     setFilteredProducts(data);
+    // setProducts(data)
   }, [data]);
 
   useEffect(() => {
+
     if (sortBy === "priceHigh") {
-      return setFilteredProducts([...filteredProducts].sort((a, b) => b.price - a.price));
+      setFilteredProducts((prevData) => {
+        console.log("prevData", prevData);
+        return [...prevData].sort((a, b) => b.price - a.price);
+      });
     } else if (sortBy === "priceLow") {
-      setFilteredProducts([...filteredProducts].sort((a, b) => a.price - b.price));
+      setFilteredProducts((prevData) =>
+        [...prevData].sort((a, b) => a.price - b.price)
+      );
     } else if (sortBy === "newRelease") {
-      setFilteredProducts(filteredProducts.filter((shoe) => shoe.isNewRelease));
+      setFilteredProducts((prevData) =>
+        prevData.filter((shoe) => shoe.isNewRelease)
+      );
     } else if (sortBy === "relevant") {
       setFilteredProducts(data);
     }
   }, [sortBy]);
 
-  useEffect(() => {
-    if (filterBy === "airJordan") {
-      setFilteredProducts([...filteredProducts].filter((item) => item.brand.includes("Air Jordan")));
-    } else if (filterBy === "nike"){
-      setFilteredProducts([...filteredProducts].filter((item) => item.brand.includes("Nike")));
-    }else if (filterBy === "newBalance"){
-      setFilteredProducts([...filteredProducts].filter((item) => item.brand.includes("New Balance")));
-    }else if (filterBy === "yeezy"){
-      setFilteredProducts([...filteredProducts].filter((item) => item.brand.includes("Yeezy")));
-    }
-  }, [filterBy]);
-  
 
+
+  useEffect(() => {
+    let ogData = [...data]
+    
+    if (filterBy === "airJordan") {
+      if (filterBy.length > 0) {
+        setFilteredProducts(
+          ogData.filter((item) => item.brand.includes("Air Jordan"))
+        );
+      } else {
+        setFilteredProducts((prevData) =>
+          [...prevData].filter((item) => item.brand.includes("Air Jordan"))
+        );
+      }
+    } else if (filterBy === "nike") {
+      if (filterBy.length > 0) {
+        setFilteredProducts(
+          ogData.filter((item) => item.brand.includes("Nike"))
+        );
+      } else {
+        setFilteredProducts((prevData) =>
+          [...prevData].filter((item) => item.brand.includes("Nike"))
+        );
+      }
+    } else if (filterBy === "newBalance") {
+      if (filterBy.length > 0) {
+        setFilteredProducts(
+          ogData.filter((item) => item.brand.includes("New Balance"))
+        );
+      } else {
+        setFilteredProducts((prevData) =>
+          [...prevData].filter((item) => item.brand.includes("New Balance"))
+        );
+      }
+    } else if (filterBy === "yeezy") {
+      if (filterBy.length > 0) {
+        setFilteredProducts(
+          ogData.filter((item) => item.brand.includes("Yeezy"))
+        );
+      } else {
+        setFilteredProducts((prevData) =>
+          [...prevData].filter((item) => item.brand.includes("Yeezy"))
+        );
+      }
+    }
+
+  }, [filterBy]);
 
   return (
     <section className="category-section-container">
@@ -68,7 +111,7 @@ const AllProducts = ({ data, title }) => {
         <select
           name="filterProduct"
           id="filterProduct"
-          // value={sortBy}
+          value={filterBy}
           onChange={(e) => setFilterBy(e.target.value)} // updates state var on any change
         >
           <option value=""></option>
@@ -81,8 +124,7 @@ const AllProducts = ({ data, title }) => {
 
       <h3>{title.toUpperCase()}</h3>
       <div className="category-card-container">
-        { 
-        ...filteredProducts.map((sneaker, index) => (
+        {...filteredProducts.map((sneaker, index) => (
           <ProductCard
             key={index}
             name={sneaker.name}
@@ -90,7 +132,7 @@ const AllProducts = ({ data, title }) => {
             brand={sneaker.brand}
             price={sneaker.price}
           />
-        ))} 
+        ))}
       </div>
     </section>
   );
@@ -98,19 +140,6 @@ const AllProducts = ({ data, title }) => {
 
 export default AllProducts;
 
-{
-  /* {...data
-  // .slice(0, 8)
-  .map((sneaker, index) => (
-    <ProductCard
-      key={index}
-      name={sneaker.name}
-      image={sneaker.image}
-      brand={sneaker.brand}
-      price={sneaker.price}
-    />
-  ))} */
-}
 {
   /* <div className="btn-container">
 <button>Shop {title}</button>
