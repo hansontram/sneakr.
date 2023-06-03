@@ -8,11 +8,10 @@ const ProductCategory = ({ data, title }) => {
       <h3>{title.toUpperCase()}</h3>
       <div className="category-card-container">
         {...data
-          // .slice(0, 8)
           .map((sneaker, index) => (
-            // <Link key={sneaker.id} to={`/shop/${sneaker.id}`}>
-            <ProductCard key={index} sneaker={sneaker} />
-            // </Link>
+            <ProductCard key={index} 
+            sneaker={sneaker}
+             />
           ))}
       </div>
       <div className="btn-container">

@@ -13,10 +13,16 @@ import mockData from "./data.json";
 
 const App = () => {
   const [data, setData] = useState([]);
+
+    // TODO: Cart-function: set state
+  const [cart, setCart] = useState([]);
+
   useEffect(() => {
     setData(mockData);
   }, []);
   
+
+
   return (
     <div>
       <Router>
@@ -27,7 +33,8 @@ const App = () => {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
-          <Route path="/shop/:id" element={<Product data={data} />} />
+          {/* // TODO: Cart-function: set state */}
+          <Route path="/shop/:id" element={<Product data={data} cart={cart} setCart={setCart}/>} />
         </Routes>
       </Router>
     </div>

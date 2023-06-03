@@ -124,16 +124,15 @@ const ProductList = ({ data, title }) => {
       <h3>{title.toUpperCase()}</h3>
       <div className="category-card-container">
         {...filteredProducts.map((sneaker, index) => (
-          // TODO: Check to see if works
-          // <Link key={sneaker.id} to={`/shop/${sneaker.id}`}>
+         
             <ProductCard
               key={index}
-              name={sneaker.name}
-              image={sneaker.image}
-              brand={sneaker.brand}
-              price={sneaker.price}
+              // name={sneaker.name}
+              // image={sneaker.image}
+              // brand={sneaker.brand}
+              // price={sneaker.price}
+              sneaker={sneaker}
             />
-          // </Link>
         ))}
       </div>
     </section>
@@ -142,8 +141,3 @@ const ProductList = ({ data, title }) => {
 
 export default ProductList;
 
-{
-  /* <div className="btn-container">
-<button>Shop {title}</button>
-</div> */
-}

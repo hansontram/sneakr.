@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Cart = () => {
+const Cart = ({cartItems}) => {
   return (
     <div>
-      <p>this is shopping cart</p>
+      <h2>Your Cart</h2>
+      <div>
+        {cartItems.length === 0 && <div>Cart is empty</div>}
+      </div>
     </div>
   )
 }

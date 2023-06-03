@@ -1,13 +1,12 @@
 import "./ProductCard.css";
-import productImg from "../../assets/productImg.jpeg";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ sneaker }) => {
-  const { name, image, brand, price, id } = sneaker;
+  const { name, image, brand, price, id, description } = sneaker;
 
   return (
-    <Link key={id} to={`/shop/${id}`}>
-      <div className="card-container">
+    <Link key={id} to={`/shop/${id}`} className="card-container">
+      {/* <div className="card-container"> */}
         <div>
           <img className="productImg" src={image} alt="" />
         </div>
@@ -16,7 +15,7 @@ const ProductCard = ({ sneaker }) => {
           <h4>{name}</h4>
           {price && <p>${price}</p>}
         </div>
-      </div>
+      {/* </div> */}
     </Link>
   );
 };
