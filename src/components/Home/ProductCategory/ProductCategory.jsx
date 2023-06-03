@@ -1,8 +1,8 @@
 import "./ProductCategory.css";
 import ProductCard from "../../ProductCard/ProductCard";
+import { Link } from "react-router-dom";
 
 const ProductCategory = ({ data, title }) => {
-  // const shoes = data.map(()=>)
   return (
     <section className="category-section-container">
       <h3>{title.toUpperCase()}</h3>
@@ -10,12 +10,9 @@ const ProductCategory = ({ data, title }) => {
         {...data
           // .slice(0, 8)
           .map((sneaker, index) => (
-            <ProductCard
-              key={index}
-              name={sneaker.name}
-              image={sneaker.image}
-              brand={sneaker.brand}
-            />
+            // <Link key={sneaker.id} to={`/shop/${sneaker.id}`}>
+            <ProductCard key={index} sneaker={sneaker} />
+            // </Link>
           ))}
       </div>
       <div className="btn-container">

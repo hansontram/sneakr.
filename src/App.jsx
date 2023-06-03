@@ -7,6 +7,7 @@ import Sale from "./views/Sale";
 import Favorites from "./views/Favorites";
 import Cart from "./views/Cart";
 import About from "./views/About";
+import Product from "./views/Product";
 
 import mockData from "./data.json";
 
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
+          <Route path="/shop/:id" element={<Product data={data} />} />
         </Routes>
       </Router>
     </div>

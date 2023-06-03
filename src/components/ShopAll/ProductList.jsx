@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
-import "./AllProducts.css";
+import "./ProductList.css";
 import ProductCard from "../ProductCard/ProductCard";
+import { Link } from "react-router-dom";
 
-const AllProducts = ({ data, title }) => {
+const ProductList = ({ data, title }) => {
   const [sortBy, setSortBy] = useState("relevant");
   const [filterBy, setFilterBy] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
   // const [products, setProducts] = useState([])
 
-const sortProducts = (sortBy) => {
-  // conditional logic 
-}
-const filterProducts = (filterBy) => {
-  // conditional logic 
-}
+  // TODO: Need to debug sort and filter feature
+
+  // const sortProducts = (sortBy) => {
+  //   // conditional logic
+  // }
+  // const filterProducts = (filterBy) => {
+  //   // conditional logic
+  // }
 
   useEffect(() => {
     setFilteredProducts(data);
@@ -21,7 +24,6 @@ const filterProducts = (filterBy) => {
   }, [data]);
 
   useEffect(() => {
-
     if (sortBy === "priceHigh") {
       setFilteredProducts((prevData) => {
         console.log("prevData", prevData);
@@ -40,11 +42,9 @@ const filterProducts = (filterBy) => {
     }
   }, [sortBy]);
 
-
-
   useEffect(() => {
-    let ogData = [...data]
-    
+    let ogData = [...data];
+
     if (filterBy === "airJordan") {
       if (filterBy.length > 0) {
         setFilteredProducts(
@@ -86,7 +86,6 @@ const filterProducts = (filterBy) => {
         );
       }
     }
-
   }, [filterBy]);
 
   return (
@@ -125,20 +124,23 @@ const filterProducts = (filterBy) => {
       <h3>{title.toUpperCase()}</h3>
       <div className="category-card-container">
         {...filteredProducts.map((sneaker, index) => (
-          <ProductCard
-            key={index}
-            name={sneaker.name}
-            image={sneaker.image}
-            brand={sneaker.brand}
-            price={sneaker.price}
-          />
+          // TODO: Check to see if works
+          // <Link key={sneaker.id} to={`/shop/${sneaker.id}`}>
+            <ProductCard
+              key={index}
+              name={sneaker.name}
+              image={sneaker.image}
+              brand={sneaker.brand}
+              price={sneaker.price}
+            />
+          // </Link>
         ))}
       </div>
     </section>
   );
 };
 
-export default AllProducts;
+export default ProductList;
 
 {
   /* <div className="btn-container">

@@ -1,19 +1,21 @@
-import Navbar from '../components/Navbar/Navbar'
-import AllProducts from '../components/ShopAll/AllProducts'
+import Navbar from "../components/Navbar/Navbar";
+import ProductList from "../components/ShopAll/ProductList";
+import { Link } from "@mui/icons-material";
 
-const Shop = ({data}) => {
-
+const Shop = ({ data }) => {
   return (
     <div>
-      <Navbar/>
-        {/* Iterates and sorts alphabetically */}
-        <AllProducts data={data
-          .map(shoe => shoe)
-          .sort((a, b) => a.name.localeCompare(b.name))} 
-        title="Shop All" />
-
+      <Navbar />
+      {/* Iterates and sorts alphabetically */}
+      <ProductList
+        data={data
+          .map((shoe) => shoe)
+          .sort((a, b) => a.name.localeCompare(b.name))}
+        title="Shop All"
+      />
     </div>
-  )
-}
 
-export default Shop
+  );
+};
+
+export default Shop;
