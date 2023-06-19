@@ -1,0 +1,23 @@
+
+
+/* layout */
+
+.product-page-container{
+    display: flex;
+    justify-content: center;
+    border: 1px solid blue;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-around;
+    
+    border: 1px solid red;
+    width: 80%;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+}

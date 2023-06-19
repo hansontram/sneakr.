@@ -1,0 +1,43 @@
+.about-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+.about-section {
+  width: 50%;
+  max-width: 400px;
+  margin-right: 5rem;
+}
+
+.about-section h3 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+.about-section p {
+  margin: 0.9rem 0;
+}
+
+.aboutImg-container img {
+  height: auto;
+  width: auto;
+  max-width: 450px;
+  max-height: 450px;
+}
+/* Responsive */
+@media screen and (max-width: 950px) {
+  .about-container {
+    flex-direction: column-reverse;
+  }
+
+  .aboutImg-container img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .about-section {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 5rem;
+  }
+}
