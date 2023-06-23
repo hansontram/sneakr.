@@ -1,1 +1,1 @@
-# sneakr.
+# sneakr
