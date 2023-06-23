@@ -40,13 +40,13 @@
       
     }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 769px) {
     .card-container{
         width: 40%;
       
     }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 420px) {
     .card-container{
         width: 80%;
       
